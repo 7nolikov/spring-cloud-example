@@ -13,8 +13,8 @@ public class StockController {
 
   private final StockService stockService;
 
-  @GetMapping("/btc")
-  public String getBtcPrice() {
-    return stockService.getUsdPrice();
+  @GetMapping("/price")
+  public String getCurrencyPrice() {
+    return stockService.getCurrencyPrice();
   }
 }

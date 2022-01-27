@@ -5,8 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties
+@ConfigurationProperties(prefix = "stock")
 @Data
 public class StockProperties {
   private String currencyName;
+  private String providerUrl;
 }

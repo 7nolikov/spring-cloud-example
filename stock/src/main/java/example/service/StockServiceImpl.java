@@ -13,7 +13,7 @@ public class StockServiceImpl implements StockService {
   private final StockClient stockClient;
 
   @Override
-  public String getUsdPrice() {
+  public String getCurrencyPrice() {
     return stockClient.getCurrencyInfo().getPrice() + " " + stockProperties.getCurrencyName();
   }
 }
